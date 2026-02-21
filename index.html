@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Alladi Cloud Training | Industry Ready IT Training</title>
+
+<meta name="description" content="Full Stack, AWS & DevOps Training in Hyderabad with Internship & Job Opportunities. Call +91-9000950022">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif;}
+body{background:#0f172a;color:white;scroll-behavior:smooth;}
+header{display:flex;justify-content:space-between;align-items:center;padding:15px 40px;background:#111827;position:sticky;top:0;z-index:1000;}
+header img{height:60px;}
+header a{background:#2563eb;color:white;padding:10px 20px;text-decoration:none;border-radius:6px;font-weight:600;}
+
+.hero{padding:100px 20px;text-align:center;background:linear-gradient(to right,#0f172a,#1e3a8a);}
+.hero h1{font-size:44px;margin-bottom:20px;}
+.hero p{font-size:18px;margin-bottom:30px;}
+.hero button{padding:15px 30px;background:#2563eb;border:none;color:white;font-size:16px;border-radius:8px;cursor:pointer;}
+
+.section{padding:90px 40px;text-align:center;}
+.section h2{margin-bottom:60px;font-size:34px;}
+
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:30px;}
+.card{background:#1e293b;padding:30px;border-radius:16px;transition:0.4s;}
+.card:hover{transform:translateY(-10px);background:#2563eb;}
+
+.campus-section{padding:100px 40px;background:linear-gradient(to right,#0f172a,#1e3a8a);text-align:center;}
+.timeline{display:flex;justify-content:center;gap:40px;flex-wrap:wrap;margin-bottom:70px;}
+.stage-card{background:#1e293b;padding:35px;border-radius:18px;width:280px;transition:0.4s;}
+.stage-card:hover{transform:translateY(-12px);background:#2563eb;}
+.stage-number{font-size:42px;font-weight:700;color:#60a5fa;}
+.stage-icon{font-size:28px;margin:10px 0 15px;}
+
+.funnel{margin:70px auto;max-width:600px;}
+.funnel-step{background:#1e293b;padding:14px;margin:10px auto;border-radius:8px;width:80%;}
+.funnel-step:nth-child(2){width:65%;}
+.funnel-step:nth-child(3){width:50%;}
+.final-step{width:35%;background:#2563eb;}
+
+.path-split{display:flex;gap:30px;justify-content:center;flex-wrap:wrap;margin-top:60px;}
+.path-card{background:#1e293b;padding:30px;border-radius:14px;width:350px;transition:0.3s;}
+.path-card:hover{background:#2563eb;transform:translateY(-8px);}
+
+.testimonial{margin-top:80px;font-style:italic;max-width:800px;margin-left:auto;margin-right:auto;}
+.testimonial span{display:block;margin-top:15px;font-weight:600;}
+.disclaimer{margin-top:40px;font-size:14px;opacity:0.7;}
+
+.stats{display:flex;justify-content:center;gap:60px;margin-top:60px;flex-wrap:wrap;}
+.stat{font-size:36px;font-weight:700;color:#60a5fa;}
+
+.partners{padding:60px 20px;background:#111827;text-align:center;}
+.partners img{height:40px;margin:15px;opacity:0.7;}
+
+footer{background:#111827;padding:30px;text-align:center;font-size:14px;}
+
+.whatsapp{position:fixed;bottom:20px;right:20px;background:#25D366;color:white;padding:12px 18px;border-radius:50px;text-decoration:none;font-weight:600;}
+
+.apply-bar{position:fixed;bottom:0;left:0;width:100%;background:#2563eb;text-align:center;padding:12px;z-index:999;}
+.apply-bar a{color:white;text-decoration:none;font-weight:600;}
+</style>
+</head>
+
+<body>
+
+<header>
+  <img src="actNowLogo.png" alt="ACT Logo">
+  <a href="tel:+919000950022">Call +91-9000950022</a>
+</header>
+
+<section class="hero">
+  <h1>Industry Ready IT Training with Real Project Exposure</h1>
+  <p>Full Stack | AWS | DevOps | Internship & Job Opportunities</p>
+  <button onclick="document.getElementById('campus').scrollIntoView()">Explore Campus to Job</button>
+</section>
+
+<section class="section">
+  <h2>Our Career Focused Programs</h2>
+  <div class="cards">
+    <div class="card"><h3>Java Full Stack</h3><p>Spring Boot, React, Databases & Deployment.</p></div>
+    <div class="card"><h3>Python Full Stack</h3><p>Django, Flask, APIs & Cloud Integration.</p></div>
+    <div class="card"><h3>AWS Cloud</h3><p>EC2, S3, VPC, IAM & Architecture.</p></div>
+    <div class="card"><h3>DevOps</h3><p>Linux, Jenkins, Docker, Kubernetes.</p></div>
+  </div>
+
+  <div class="stats">
+    <div><div class="stat" id="projects">0</div><p>Projects</p></div>
+    <div><div class="stat" id="students">0</div><p>Students Trained</p></div>
+    <div><div class="stat" id="placements">0</div><p>Opportunities</p></div>
+  </div>
+</section>
+
+<section id="campus" class="campus-section">
+
+<h2>Campus to Job – Structured Selection Framework</h2>
+
+<div class="timeline">
+<div class="stage-card"><div class="stage-number">01</div><div class="stage-icon">🎓</div><h3>Academic Eligibility</h3><p>Minimum 80% in academics.</p></div>
+<div class="stage-card"><div class="stage-number">02</div><div class="stage-icon">🧠</div><h3>Assessment & Technical</h3><p>80% Aptitude & Communication + Technical Round.</p></div>
+<div class="stage-card"><div class="stage-number">03</div><div class="stage-icon">💼</div><h3>Project Selection</h3><p>Work on real-time ACS projects.</p></div>
+</div>
+
+<div class="funnel">
+<div class="funnel-step">All Enrolled Students</div>
+<div class="funnel-step">Eligible Candidates</div>
+<div class="funnel-step">Assessment Qualified</div>
+<div class="funnel-step final-step">Campus to Job Selected</div>
+</div>
+
+<div class="path-split">
+<div class="path-card"><h3>Direct Path</h3><p>Join ACS real-time projects directly.</p></div>
+<div class="path-card"><h3>Internship Path</h3><p>Internship → Performance → Permanent Role.</p></div>
+</div>
+
+<div class="testimonial">
+<p>"This program gave me real industry confidence and live project exposure."</p>
+<span>– Program Participant</span>
+</div>
+
+<p class="disclaimer">Performance evaluated at every stage. Final selection subject to management discretion.</p>
+
+</section>
+
+<section class="partners">
+<h3>Technology Ecosystem</h3>
+<p>Java | Python | AWS | Docker | Kubernetes | React | Spring</p>
+</section>
+
+<footer>
+Pillar No. 771, Near KPHB Metro, Hyderabad - 500072<br>
+Phone: +91-9000950022<br>
+Email: info@alladicloudsolutions.com<br><br>
+© 2025 Alladi Cloud Training. All Rights Reserved.
+</footer>
+
+<a class="whatsapp" href="https://wa.me/919000950022" target="_blank">WhatsApp</a>
+
+<div class="apply-bar">
+<a href="tel:+919000950022">Apply Now – Limited Seats Available</a>
+</div>
+
+<script>
+function animateValue(id, end, duration){
+let start=0;
+let range=end-start;
+let current=start;
+let increment=end>start?1:-1;
+let stepTime=Math.abs(Math.floor(duration/range));
+let obj=document.getElementById(id);
+let timer=setInterval(function(){
+current+=increment;
+obj.textContent=current;
+if(current==end){clearInterval(timer);}
+},stepTime);
+}
+
+animateValue("projects",120,1500);
+animateValue("students",850,1500);
+animateValue("placements",300,1500);
+</script>
+
+</body>
+</html>
