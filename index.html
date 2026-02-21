@@ -3,195 +3,336 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Alladi Coding & Technologies | Industry Ready IT Training</title>
-
-<meta name="description" content="Industry Ready Full Stack, AWS & DevOps Training in Hyderabad with Internship & Job Opportunities. 5 Star Google & Justdial Rating.">
+<title>Alladi Coding & Technologies</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
 <style>
 *{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif;}
-body{background:#0f172a;color:white;scroll-behavior:smooth;}
+body{background:#0b132b;color:white;scroll-behavior:smooth;}
 
 /* HEADER */
-header{display:flex;justify-content:space-between;align-items:center;padding:15px 40px;background:#111827;position:sticky;top:0;z-index:1000;}
-header img{height:55px;}
+header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 60px;
+background:#0d1b3d;
+}
+header img{height:50px;}
 .header-buttons{display:flex;gap:15px;}
-.btn{padding:10px 18px;border-radius:6px;text-decoration:none;font-weight:600;}
-.call-btn{background:#2563eb;color:white;}
-.whatsapp-btn{background:#25D366;color:white;}
+.btn{
+padding:10px 18px;
+border-radius:8px;
+text-decoration:none;
+font-weight:600;
+color:white;
+}
+.whatsapp-btn{background:#22c55e;}
+.call-btn{background:#2563eb;}
 
 /* HERO */
-.hero{padding:110px 20px;text-align:center;background:linear-gradient(to right,#0f172a,#1e3a8a);}
-.hero h1{font-size:44px;margin-bottom:20px;}
-.hero p{font-size:18px;margin-bottom:30px;}
+.hero{
+padding:120px 20px;
+text-align:center;
+background:linear-gradient(to right,#0b132b,#1f3b88);
+}
+.hero h1{font-size:48px;margin-bottom:20px;}
+.hero p{opacity:0.9;font-size:18px;}
 
-/* STATS */
-.stats{display:flex;justify-content:center;gap:100px;margin-top:60px;flex-wrap:wrap;}
+.stats{
+display:flex;
+justify-content:center;
+gap:120px;
+margin-top:60px;
+flex-wrap:wrap;
+}
 .stat-number{font-size:42px;font-weight:700;color:#60a5fa;}
+.stat-label{margin-top:10px;}
 
-/* PROGRAMS */
+/* SECTION */
 .section{padding:100px 40px;text-align:center;}
-.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:30px;}
-.card{background:#1e293b;padding:30px;border-radius:16px;transition:0.4s;}
-.card:hover{transform:translateY(-10px);background:#2563eb;}
+.section h2{margin-bottom:50px;}
+
+.cards{
+display:flex;
+justify-content:center;
+gap:30px;
+flex-wrap:wrap;
+}
+.card{
+background:#1c2541;
+padding:25px 40px;
+border-radius:12px;
+min-width:250px;
+}
 
 /* CAMPUS */
-.campus-section{padding:100px 40px;background:linear-gradient(to right,#0f172a,#1e3a8a);text-align:center;}
-.timeline{display:flex;justify-content:center;gap:40px;flex-wrap:wrap;margin-bottom:70px;}
-.stage-card{background:#1e293b;padding:35px;border-radius:18px;width:280px;transition:0.4s;}
-.stage-card:hover{transform:translateY(-12px);background:#2563eb;}
-.stage-number{font-size:42px;font-weight:700;color:#60a5fa;}
-.funnel{margin:60px auto;max-width:600px;}
-.funnel-step{background:#1e293b;padding:14px;margin:10px auto;border-radius:8px;width:80%;}
+.campus-section{
+padding:100px 40px;
+background:linear-gradient(to right,#0b132b,#1f3b88);
+text-align:center;
+}
+.timeline{
+display:flex;
+justify-content:center;
+gap:30px;
+flex-wrap:wrap;
+margin-bottom:50px;
+}
+.stage-card{
+background:#1c2541;
+padding:30px;
+border-radius:12px;
+width:260px;
+}
+.stage-number{
+font-size:28px;
+font-weight:700;
+color:#60a5fa;
+margin-bottom:10px;
+}
+
+/* FUNNEL */
+.funnel{
+margin:40px auto;
+max-width:500px;
+}
+.funnel-step{
+background:#1c2541;
+padding:10px;
+margin:8px auto;
+border-radius:6px;
+width:80%;
+}
 .funnel-step:nth-child(2){width:65%;}
 .funnel-step:nth-child(3){width:50%;}
 .final-step{width:35%;background:#2563eb;}
-.path-split{display:flex;gap:30px;justify-content:center;flex-wrap:wrap;margin-top:60px;}
-.path-card{background:#1e293b;padding:30px;border-radius:14px;width:350px;transition:0.3s;}
-.path-card:hover{background:#2563eb;transform:translateY(-8px);}
 
-/* TESTIMONIALS */
-.testimonials{background:#111827;padding:90px 20px;text-align:center;}
-.testimonial-box{max-width:700px;margin:30px auto;font-style:italic;}
-
-/* RATINGS */
-.ratings-container{display:flex;justify-content:center;gap:50px;margin-top:40px;flex-wrap:wrap;}
-.rating-box{background:#1e293b;padding:25px 40px;border-radius:14px;text-align:center;transition:0.3s;}
-.rating-box:hover{background:#2563eb;transform:translateY(-8px);}
-.stars{font-size:24px;color:#FFD700;margin:10px 0;}
-.rating-box a{color:white;text-decoration:none;font-weight:600;display:inline-block;margin-top:10px;}
+/* PATH */
+.path-split{
+display:flex;
+justify-content:center;
+gap:30px;
+flex-wrap:wrap;
+margin-top:40px;
+}
+.path-card{
+background:#1c2541;
+padding:25px;
+border-radius:12px;
+width:300px;
+}
 
 /* REVIEWS */
-.reviews{padding:90px 20px;text-align:center;}
-.review-gallery{display:flex;justify-content:center;gap:30px;flex-wrap:wrap;margin-top:40px;}
-.review-gallery img{width:320px;border-radius:12px;transition:0.3s;}
-.review-gallery img:hover{transform:scale(1.05);}
+.review-gallery{
+display:flex;
+justify-content:center;
+gap:30px;
+flex-wrap:wrap;
+}
+.review-gallery img{
+width:300px;
+border-radius:12px;
+}
 
-/* LEAD FORM */
-.lead-form{padding:90px 20px;background:#111827;text-align:center;}
-.lead-form form{max-width:500px;margin:auto;}
-.lead-form input,.lead-form select{width:100%;padding:12px;margin-bottom:15px;border:none;border-radius:6px;}
-.lead-form button{width:100%;padding:12px;background:#2563eb;border:none;color:white;font-weight:600;border-radius:6px;cursor:pointer;}
+/* RATINGS */
+.ratings-container{
+display:flex;
+justify-content:center;
+gap:40px;
+margin-top:40px;
+flex-wrap:wrap;
+}
+.rating-box{
+background:#1c2541;
+padding:30px;
+border-radius:12px;
+width:260px;
+}
+.stars{color:#facc15;font-size:20px;margin:10px 0;}
+
+/* FORM */
+.lead-form{
+padding:100px 20px;
+text-align:center;
+}
+.lead-form form{
+max-width:500px;
+margin:auto;
+}
+.lead-form input,
+.lead-form select{
+width:100%;
+padding:12px;
+margin-bottom:15px;
+border-radius:6px;
+border:none;
+}
+.lead-form button{
+width:100%;
+padding:12px;
+background:#2563eb;
+color:white;
+border:none;
+border-radius:6px;
+font-weight:600;
+}
 
 /* FOOTER */
-footer{background:#111827;padding:30px;text-align:center;font-size:14px;}
+footer{
+text-align:center;
+padding:40px 20px;
+background:#0d1b3d;
+}
 
 /* FLOATING */
-.whatsapp-floating{position:fixed;bottom:80px;right:20px;background:#25D366;color:white;padding:12px 18px;border-radius:50px;text-decoration:none;font-weight:600;z-index:999;}
-.apply-bar{position:fixed;bottom:0;left:0;width:100%;background:#2563eb;text-align:center;padding:12px;z-index:998;}
-.apply-bar a{color:white;text-decoration:none;font-weight:600;}
-</style>
-
-<!-- SEO SCHEMA -->
-<script type="application/ld+json">
-{
- "@context": "https://schema.org",
- "@type": "EducationalOrganization",
- "name": "Alladi Coding & Technologies",
- "telephone": "+91-9000950022",
- "address": {
-   "@type": "PostalAddress",
-   "streetAddress": "Pillar No. 771, Near KPHB Metro",
-   "addressLocality": "Hyderabad",
-   "addressRegion": "Telangana",
-   "postalCode": "500072",
-   "addressCountry": "IN"
- },
- "aggregateRating": {
-   "@type": "AggregateRating",
-   "ratingValue": "5.0",
-   "reviewCount": "35"
- }
+.whatsapp-floating{
+position:fixed;
+bottom:90px;
+right:20px;
+background:#22c55e;
+color:white;
+padding:12px 18px;
+border-radius:30px;
+text-decoration:none;
 }
-</script>
-
+.apply-bar{
+position:fixed;
+bottom:0;
+width:100%;
+background:#2563eb;
+text-align:center;
+padding:12px;
+font-weight:600;
+}
+</style>
 </head>
+
 <body>
 
 <header>
-  <img src="actNowLogo.png" alt="ACT Logo">
-  <div class="header-buttons">
-    <a href="https://wa.me/919000950022" target="_blank" class="btn whatsapp-btn">WhatsApp</a>
-    <a href="tel:+919000950022" class="btn call-btn">Call</a>
-  </div>
+<img src="actNowLogo.png" alt="Logo">
+<div class="header-buttons">
+<a href="https://wa.me/919000950022" class="btn whatsapp-btn">WhatsApp</a>
+<a href="tel:+919000950022" class="btn call-btn">Call</a>
+</div>
 </header>
 
 <section class="hero">
-  <h1>Alladi Coding & Technologies</h1>
-  <p>Industry Ready IT Training with Real Project Exposure</p>
-  <div class="stats">
-    <div><div class="stat-number">120+</div><p>Projects</p></div>
-    <div><div class="stat-number">850+</div><p>Students Trained</p></div>
-    <div><div class="stat-number">300+</div><p>Opportunities</p></div>
-  </div>
+<h1>Alladi Coding & Technologies</h1>
+<p>Industry Ready IT Training with Real Project Exposure</p>
+<div class="stats">
+<div>
+<div class="stat-number">120+</div>
+<div class="stat-label">Projects</div>
+</div>
+<div>
+<div class="stat-number">850+</div>
+<div class="stat-label">Students Trained</div>
+</div>
+<div>
+<div class="stat-number">300+</div>
+<div class="stat-label">Opportunities</div>
+</div>
+</div>
 </section>
 
 <section class="section">
-  <h2>Our Career Programs</h2>
-  <div class="cards">
-    <div class="card"><h3>Java Full Stack</h3></div>
-    <div class="card"><h3>Python Full Stack</h3></div>
-    <div class="card"><h3>AWS Cloud</h3></div>
-    <div class="card"><h3>DevOps</h3></div>
-  </div>
+<h2>Our Career Programs</h2>
+<div class="cards">
+<div class="card">Java Full Stack</div>
+<div class="card">Python Full Stack</div>
+<div class="card">AWS Cloud</div>
+<div class="card">DevOps</div>
+</div>
 </section>
 
-<section class="reviews">
-  <h2>Verified Student Reviews</h2>
-  <div class="review-gallery">
-    <img src="google-review1.jpeg" alt="Google Review">
-    <img src="google-review2.jpeg" alt="Google Review">
-    <img src="justdial-review1.jpeg" alt="Justdial Review">
-  </div>
+<section class="campus-section">
+<h2>Campus to Job – Structured Selection Framework</h2>
+<div class="timeline">
+<div class="stage-card">
+<div class="stage-number">01</div>
+Academic Eligibility<br>Minimum 80% in academics.
+</div>
+<div class="stage-card">
+<div class="stage-number">02</div>
+Assessment & Technical<br>80% Aptitude & Communication + Technical Round.
+</div>
+<div class="stage-card">
+<div class="stage-number">03</div>
+Project Selection<br>Work on real-time ACS projects.
+</div>
+</div>
+
+<div class="funnel">
+<div class="funnel-step">All Enrolled Students</div>
+<div class="funnel-step">Eligible Candidates</div>
+<div class="funnel-step">Assessment Qualified</div>
+<div class="funnel-step final-step">Campus to Job Selected</div>
+</div>
+
+<div class="path-split">
+<div class="path-card">Direct Path<br>Join ACS real-time projects directly.</div>
+<div class="path-card">Internship Path<br>Internship → Performance → Permanent Role.</div>
+</div>
 </section>
 
-<section class="testimonials">
-  <h2>Student Testimonials & Ratings</h2>
-  <div class="testimonial-box">"Real-time exposure gave me confidence to crack interviews."</div>
-  <div class="testimonial-box">"Strict evaluation improved my technical discipline."</div>
+<section class="section">
+<h2>Verified Student Reviews</h2>
+<div class="review-gallery">
+<img src="google-review1.jpeg">
+<img src="google-review2.jpeg">
+<img src="justdial-review1.jpeg">
+</div>
+</section>
 
-  <div class="ratings-container">
-    <div class="rating-box">
-      <h3>Google Rating</h3>
-      <div class="stars">★★★★★</div>
-      <p>5.0 Rating</p>
-      <a href="https://www.google.com/search?q=Alladi+Coding+%26+Technologies+Reviews" target="_blank">View Reviews</a>
-    </div>
+<section class="section">
+<h2>Student Testimonials & Ratings</h2>
+<p>"Real-time exposure gave me confidence to crack interviews."</p>
+<p>"Strict evaluation improved my technical discipline."</p>
 
-    <div class="rating-box">
-      <h3>Justdial Rating</h3>
-      <div class="stars">★★★★★</div>
-      <p>5.0 Rating</p>
-      <a href="https://www.justdial.com/Hyderabad/Alladi-Cloud-Training-Vijay-Sales-Building-Pillar-No-771-Vivekananda-Nagar-Kukatpally/040PXX40-XX40-240809165205-M6D8_BZDET/writereview" target="_blank">Write a Review</a>
-    </div>
-  </div>
+<div class="ratings-container">
+<div class="rating-box">
+Google Rating
+<div class="stars">★★★★★</div>
+5.0 Rating<br>
+<a href="#" style="color:#60a5fa;">View Reviews</a>
+</div>
+
+<div class="rating-box">
+Justdial Rating
+<div class="stars">★★★★★</div>
+5.0 Rating<br>
+<a href="#" style="color:#60a5fa;">Write a Review</a>
+</div>
+</div>
 </section>
 
 <section class="lead-form">
-  <h2>Apply Now</h2>
-  <form action="https://formspree.io/f/xpwonvqg" method="POST">
-    <input type="text" name="name" placeholder="Full Name" required>
-    <input type="tel" name="phone" placeholder="Phone Number" required>
-    <select name="course">
-      <option>Java Full Stack</option>
-      <option>Python Full Stack</option>
-      <option>AWS Cloud</option>
-      <option>DevOps</option>
-    </select>
-    <button type="submit">Submit Application</button>
-  </form>
+<h2>Apply Now</h2>
+<form action="https://formspree.io/f/xpwonvqg" method="POST">
+<input type="text" name="name" placeholder="Full Name" required>
+<input type="tel" name="phone" placeholder="Phone Number" required>
+<select name="course">
+<option>Java Full Stack</option>
+<option>Python Full Stack</option>
+<option>AWS Cloud</option>
+<option>DevOps</option>
+</select>
+<button type="submit">Submit Application</button>
+</form>
 </section>
 
 <footer>
-  Pillar No. 771, Near KPHB Metro, Hyderabad - 500072<br>
-  Phone: +91-9000950022<br>
-  Email: info@alladicloudsolutions.com<br><br>
-  © 2025 Alladi Coding & Technologies
+Pillar No. 771, Near KPHB Metro, Hyderabad - 500072<br>
+Phone: +91-9000950022<br>
+Email: info@alladicloudsolutions.com<br>
+© 2025 Alladi Coding & Technologies
 </footer>
 
-<a class="whatsapp-floating" href="https://wa.me/919000950022" target="_blank">WhatsApp</a>
-<div class="apply-bar"><a href="tel:+919000950022">Apply Now – Limited Seats Available</a></div>
+<a class="whatsapp-floating" href="https://wa.me/919000950022">WhatsApp</a>
+<div class="apply-bar">Apply Now – Limited Seats Available</div>
 
 </body>
 </html>
